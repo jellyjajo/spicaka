@@ -1,0 +1,165 @@
+* {
+	margin: 0;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+:root {
+	--h1ratiodesktop: min(5.6vw, 80px);
+}
+
+html {
+	background-color: #f4f4f4;
+	color: #fff;
+	font-family: Poppins, sans-serif;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	min-height: 100vh;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 200;
+	font-stretch: normal;
+	line-height: 1.44;
+}
+
+.navBar {
+	top: 0;
+	left: 0;
+	background: transparent;
+	width: 100%;
+	position: fixed;
+	z-index: 9999;
+}
+
+.navBar div {
+	padding: 0px 0px;
+}
+
+.navBar div a,
+.logo div a,
+.socialmedia div a {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 1.44;
+	letter-spacing: normal;
+}
+
+.navBar a:hover,
+.logo div a:hover,
+.socialmedia div a:hover {
+	text-decoration: underline;
+}
+
+.nav-center {
+	margin-top: 32px;
+	justify-content: center;
+	text-align: center;
+}
+
+.nav-center a,
+.socialmedia a {
+	margin: 0 16px;
+	padding: 0 0px;
+}
+
+.logo {
+	float: right;
+	margin: 0px 18px;
+}
+
+.logo-rotate {
+	margin-top: 32px;
+	position: fixed;
+	width: fit-content;
+	transform-origin: top left;
+	transform: rotate(90deg);
+}
+
+.section-1 {
+	height: 100vh;
+	width: 100%;
+	z-index: -1;
+	background: radial-gradient(
+		circle at 16% 0%,
+		#4f16d1,
+		#758fff 18%,
+		#758fff 51%,
+		#4059c5 82%,
+		#172f78 107%
+	);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.section-2 {
+	height: 100vh;
+	width: 100%;
+	z-index: -2;
+	background-image: radial-gradient(
+		circle at 66% 0,
+		#65e3e1,
+		#a92ffb 98%,
+		#891cfb 121%,
+		#6507fa 156%,
+		#3919bb 325%
+	);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.section-3 {
+	height: 100vh;
+	width: 100%;
+	background: radial-gradient(
+		circle at -82% 11%,
+		#e39a65,
+		#a92ffb 61%,
+		#891cfb 80%,
+		#6507fa 110%,
+		#3919bb 151%
+	);
+	z-index: -1;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.container {
+	display: flex;
+}
+
+h1 {
+	flex: 1;
+	padding-top: 32px;
+	padding-left: 32px;
+	max-width: 648px;
+	font-size: max(var(--h1ratiodesktop), 60px);
+	font-weight: 600;
+	line-height: 1.13;
+	transform: translate(50% 50%);
+}
+
+h2 {
+	flex: 1;
+	max-width: 805px;
+	padding-top: 32px;
+	padding-left: 170px;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.33;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0px;
+	margin-left: 138px;
+	margin-bottom: 64px;
+	width: 100%;
+	background: rgb(0, 0, 0, 0);
+	z-index: 9999;
+}
