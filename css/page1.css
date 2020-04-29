@@ -131,6 +131,28 @@ section {
 	);
 }
 
+.section-2 {
+	background: radial-gradient(
+		circle at 66% 0,
+		#65e3e1,
+		#a92ffb 98%,
+		#891cfb 121%,
+		#6507fa 156%,
+		#3919bb 325%
+	);
+}
+
+.section-3 {
+	background: radial-gradient(
+		circle at -82% 11%,
+		#e39a65,
+		#a92ffb 61%,
+		#891cfb 80%,
+		#6507fa 110%,
+		#3919bb 151%
+	);
+}
+
 .banner {
 	margin-left: var(--bannerleft);
 	font-size: 80px;
@@ -155,6 +177,11 @@ section {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+}
+
+.btn:hover {
+	background: white;
+	color: black;
 }
 
 .social-media {
