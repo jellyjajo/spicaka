@@ -50,6 +50,8 @@ body {
 	font-weight: 200;
 	font-stretch: normal;
 	line-height: 1.44;
+	height: 3000px;
+	background: linear-gradient(150deg, #000000, #545454 25%, #c9c9c9 50%, #6ce6eb 58%, #4bcdf9 66%, #141414);
 }
 
 .nav {
@@ -108,11 +110,32 @@ body {
 	border-bottom: 1px solid white;
 }
 
+.backword {
+	display: flex;
+	align-items: right;
+}
+
+.backword-container {
+	position: fixed;
+	-webkit-backdrop-filter: blur(2px);
+	filter: blur(2px);
+	backdrop-color: rgba(255, 255, 255, 0.2);
+}
+
+.studio {
+	unicode-bidi:bidi-override;
+	direction:rtl;
+	opacity: 0.4;
+	font-size: 50vh;
+	font-style: normal;
+	font-weight: 800;
+	backdrop-filter:blur(10px);
+}
+
 section {
 	min-height: 100vh;
 	width: 100%;
 	background-size: cover;
-	background-color: green;
 	background-position: center;
 	background-attachment: fixed;
 	padding: var(--bannertop) 0px;
@@ -120,38 +143,6 @@ section {
 	flex-direction: column;
 }
 
-.section-1 {
-	background: radial-gradient(
-		circle at 16% 0%,
-		#4f16d1,
-		#758fff 18%,
-		#758fff 51%,
-		#4059c5 82%,
-		#172f78 107%
-	);
-}
-
-.section-2 {
-	background: radial-gradient(
-		circle at 66% 0,
-		#65e3e1,
-		#a92ffb 98%,
-		#891cfb 121%,
-		#6507fa 156%,
-		#3919bb 325%
-	);
-}
-
-.section-3 {
-	background: radial-gradient(
-		circle at -82% 11%,
-		#e39a65,
-		#a92ffb 61%,
-		#891cfb 80%,
-		#6507fa 110%,
-		#3919bb 151%
-	);
-}
 
 .banner {
 	margin-left: var(--bannerleft);
