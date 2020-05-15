@@ -50,7 +50,7 @@ body {
 	font-weight: 200;
 	font-stretch: normal;
 	line-height: 1.44;
-	height: 3000px;
+	height: 100%;
 	background: linear-gradient(150deg, #000000, #545454 25%, #c9c9c9 50%, #6ce6eb 58%, #4bcdf9 66%, #141414);
 }
 
