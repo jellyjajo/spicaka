@@ -70,6 +70,7 @@ body {
 	top: var(--topmargin);
 	right: var(--rightmargin);
 	width: 0;
+	z-index: 97;
 }
 
 .side-link {
@@ -78,19 +79,23 @@ body {
 	transform-origin: top left;
 	transform: rotate(90deg);
 	width: 200px;
-}
-
-.page-label {
-	margin-bottom: 8px;
+	z-index: 97;
 }
 
 .page-indicator {
-	position: fixed;
-	right: calc(var(--rightmargin) + 9px);
 	top: 256px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	float: right;
+	padding-right: calc(var(--rightmargin) + 9px);
+	padding-top: 13%;
+	z-index: 98;
+}
+
+.page-label {
+	margin-bottom: 8px;
+	z-index: 98;
 }
 
 .page-line {
@@ -110,11 +115,32 @@ body {
 	border-bottom: 1px solid white;
 }
 
+.button-link {
+	font-size: 18px;
+	margin: 0 0px;
+}
+.arrow {
+	float:right;
+	margin: 0 0px;
+	transform: scale(0.3);
+	width: 18px;
+	padding-top: 3px;
+}
+
+.backword {
+}
+
 #studio {
+	height: 361px;
+	width: 1268px;
 	background-color: rgba(255, 255, 255, 0.2);
 	position:fixed;
+	right: 0;
+	top:32%;
 	backdrop-filter: blur(2px);
 	clip-path: url(#svgPath);
+	z-index: ;
+	transform: scaleY(-1, -1);
 }
 
 section {
@@ -147,17 +173,20 @@ section {
 }
 
 .btn {
-	border: 1px solid white;
 	border-radius: 25px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	-webkit-backdrop-filter: blur(9px);
+backdrop-filter: blur(9px);
+background-color: rgba(255, 255, 255, 0.16);
 }
 
 .btn:hover {
-	background: white;
-	color: black;
+	border: solid;
+	border-width: 1px;
+	border-color: white;
 }
 
 .social-media {
