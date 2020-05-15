@@ -110,26 +110,11 @@ body {
 	border-bottom: 1px solid white;
 }
 
-.backword {
-	display: flex;
-	align-items: right;
-}
-
-.backword-container {
-	position: fixed;
-	-webkit-backdrop-filter: blur(2px);
-	filter: blur(2px);
-	backdrop-color: rgba(255, 255, 255, 0.2);
-}
-
-.studio {
-	unicode-bidi:bidi-override;
-	direction:rtl;
-	opacity: 0.4;
-	font-size: 50vh;
-	font-style: normal;
-	font-weight: 800;
-	backdrop-filter:blur(10px);
+#studio {
+	background-color: rgba(255, 255, 255, 0.2);
+	position:fixed;
+	backdrop-filter: blur(2px);
+	clip-path: url(#svgPath);
 }
 
 section {
