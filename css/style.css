@@ -246,7 +246,7 @@ section {
 	float: none;
 }
 
-.box {
+.box, .box1 {
 	margin-left: var(--leftmargin);
 	font-size: 30px;
 	line-height: 1.33;
@@ -353,4 +353,12 @@ ol li::before {
 	transform: translate(0px, 100px);
 	opacity: 0;
 	transition-duration: 0s !important;
+}
+
+.copyright {
+	position: relative;
+	font-size: calc(12px + .5vw);	line-height: 1.33;
+	padding-left: var(--leftmargin);
+	padding-top: 50px;
+	color: black;
 }
